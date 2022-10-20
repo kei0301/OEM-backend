@@ -10,15 +10,15 @@ import {
   newWL,
   imageMulti,
   Uploadfiles,
-} from "../controllers/raffleController";
+} from "./controllers/raffleController";
 
 const express = require("express");
-const fileconfig = require("../dir");
 const multer = require("multer");
-const FileUploader = require("../upload.js");
+const FileUploader = require("./upload.js");
 const path = require("path");
 // trending
 
+const fileconfig = require("./dir");
 const Uploader = new FileUploader(path.join(fileconfig.BASEURL));
 
 const router = routerx();
